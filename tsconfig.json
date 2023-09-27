@@ -1,0 +1,19 @@
+{
+  "compilerOptions": {
+    "outDir": "./dist/", // показывает, в какую папку будет делаться сборка, но в данном проекте это не важно, так как мы собираем с помощью webpack'а
+    "noImplicitAny": true, // указывает (как ошибку) места, где не указан тип элемента
+    "module": "ESNext", // 
+    "target": "es5", // показывает в какую спецификацию компилировать 
+    "jsx": "react-jsx",
+    "allowJs": true, // позволяет использовать .js файлы
+    "moduleResolution": "node", // Почти всегда node
+    "allowSyntheticDefaultImports": true, // позволяет писать не import * as ANY from 'ANY', а import ANY from 'ANY'
+    "esModuleInterop": true, // позволяет делать import ANY from 'ANY'
+    "baseUrl": "."
+  },
+  "ts-node": {
+    "compilerOptions": {
+      "module": "CommonJS"
+    }
+  }
+}
