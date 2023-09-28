@@ -15,12 +15,12 @@ export function buildWebpackConfig(options: BuildOptions): webpack.Configuration
     output: {
       filename: '[name].[contenthash].js',
       path: paths.build,
-      clean: true,
+      clean: true, // Отчищает старые сбилженные файлы
     },
     module: {
       rules: buildLoaders(options)
     },
-    resolve: buildResolvers(),
+    resolve: buildResolvers(options),
     plugins: buildPlugins(options),
     devtool: isDev ? 'inline-source-map' : undefined,
     devServer: isDev ? buildDevServer(options) : undefined

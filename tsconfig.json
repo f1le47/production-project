@@ -9,7 +9,10 @@
     "moduleResolution": "node", // Почти всегда node
     "allowSyntheticDefaultImports": true, // позволяет писать не import * as ANY from 'ANY', а import ANY from 'ANY'
     "esModuleInterop": true, // позволяет делать import ANY from 'ANY'
-    "baseUrl": "."
+    "baseUrl": ".",
+    "paths": {
+      "*": ["./src/*"]
+    }
   },
   "ts-node": {
     "compilerOptions": {
