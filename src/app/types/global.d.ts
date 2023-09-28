@@ -1,7 +1,8 @@
-declare module "*.module.css";
-declare module "*.module.scss";
+declare module '*.module.css';
+declare module '*.module.scss';
 
-declare module "*.svg" {
+declare module '*.svg' {
+  // eslint-disable-next-line
   const content: React.FunctionComponent<React.SVGAttributes<SVGElement>>;
   export default content;
 }
