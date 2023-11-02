@@ -34,6 +34,7 @@ module.exports = {
         'no-underscore-dangle': 0,
         'max-len': 0,
         'i18next/no-literal-string': [2, { markupOnly: true }],
+        'arrow-body-style': 0,
     },
     globals: {
         __IS_DEV__: true,
