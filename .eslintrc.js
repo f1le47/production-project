@@ -33,7 +33,11 @@ module.exports = {
         'import/no-extraneous-dependencies': 0,
         'no-underscore-dangle': 0,
         'max-len': ['error', { ignoreComments: true, code: 100 }],
-        'i18next/no-literal-string': [2, { markupOnly: true, ignoreAttribute: ['data-testid'] }],
+        'i18next/no-literal-string': [
+            2, {
+                markupOnly: true, ignoreAttribute: ['data-testid', 'to'],
+            },
+        ],
         'arrow-body-style': 0,
     },
     globals: {
