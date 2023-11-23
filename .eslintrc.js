@@ -13,7 +13,7 @@ module.exports = {
         ecmaVersion: 'latest',
         sourceType: 'module',
     },
-    plugins: ['react', '@typescript-eslint', 'i18next'],
+    plugins: ['react', '@typescript-eslint', 'i18next', 'react-hooks'],
     rules: {
         'react/jsx-indent-props': [2, 4],
         'react/function-component-definition': 0,
@@ -39,6 +39,11 @@ module.exports = {
             },
         ],
         'arrow-body-style': 0,
+        'jsx-a11y/click-events-have-key-events': 0,
+        'jsx-a11y/no-static-element-interactions': 0,
+        'react-hooks/rules-of-hooks': 'error',
+        'react-hooks/exhaustive-deps': 'error',
+        'no-param-reassign': 0,
     },
     globals: {
         __IS_DEV__: true,
